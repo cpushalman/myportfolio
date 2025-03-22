@@ -16,9 +16,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
-p{
+/* p{
     color: rgb(85,85,85);
-}
+} */
 
 /* transition */
 
@@ -132,28 +132,64 @@ text-decoration: none;
 }
 
 .ham-links.open
-{
+{  transition: all 1s ease-in-out;
     max-height: 300px;
 }
 .ham-icon.open span:first-child{
     transform: rotate(45deg) translate(10px,5px);
-    transition: all 0.3 ease-in-out;
+    transition: all 1s ease-in-out;
 
 }
 .ham-icon.open span:nth-child(2){
     opacity: 0;
 }
 .ham-icon.open span:last-child{
+    transition: all  0.5s ease-in-out;
     transform: rotate(-45deg) translate(10px,-5px);
 }
 
 .ham-icon span:first-child{
+    transition: all  0.5s ease-in-out;
     transform: none;
 }
 .ham-icon span:nth-child(2){
+    transition: all 0.5s ease-in-out;
    opacity: 1;
 }
 .ham-icon span:last-child{
+    transition: all 0.5s ease-in-out;
     transform: none;
 }
 
+.homecontent{
+    display: flex;
+   justify-content: space-around;
+    align-items: center     ;
+
+    height: 83vh;
+    width: 100%;
+ 
+}
+.pfp{
+    position: relative;
+    right: 2%;
+    
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.pfp img{
+ height: 100%;
+ width: 100%;
+    border-radius: 50%;
+     
+}
+.info{
+    color: black;
+    font-size: 75px;
+    position: relative;
+   bottom: 25%;
+   right: 9%;
+}
