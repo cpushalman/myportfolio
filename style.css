@@ -119,6 +119,11 @@ flex-direction: column;
     transition: all 0.3 ease-in-out;
 
 }
+.ham-links li{
+    margin-left: 25px;
+    margin-bottom: 10px;
+
+}
 
 .ham-links{
     list-style: none;
